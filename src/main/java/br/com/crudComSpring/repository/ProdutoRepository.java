@@ -9,4 +9,5 @@ import br.com.crudComSpring.model.Produto;
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 
+	
 }
