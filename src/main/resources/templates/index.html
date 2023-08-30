@@ -1,14 +1,300 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns=schemaLocation="http://www.thymeleaf.org">
+
 <head>
-<!--criar conecxao com css -->
-  <link th:href="@{styles/css/style.css}"rel="stylesheet" />
-<meta charset="UTF-8">
-<title>Pagina Principal</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Modelo</title>
+  <link th:href="@{styles/css/style.css}" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vampiro+One&family=Wallpoet&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 </head>
+
 <body>
+  <div class="container" id="nav-bar">
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="/">
+        <i class="bi bi-controller fs-2"></i> DEVGAMES</a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto gap-5">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/cadastro">Inscreva-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cursos">Cursos</a>
+          </li>
+          <li class="nav-item dropdown" data-bs-theme="dark">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Ajuda</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#perguntas">Duvidas</a></li>
+              <li><a class="dropdown-item" href="#contato">Fale Conosco</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-    <h1>Pagina Inicial crud</h1>
+  <div class="container p-5" id="DevGames">
+    <div class="row justify-content-center">
+      <div class="col-4 p-2">
+        <h1 class="display-2">DEVGAMES</h1>
+        <p class="lead">Aprenda a desenvolver jogos e se torne um profissional da área de games.</p>
+      </div>
+      <div class="col-8">
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img class="bd-placeholder-img d-block" height="500" width="900"
+                src="https://img.freepik.com/fotos-gratis/laboratorio-de-informatica-futurista-com-iluminacao-azul-brilhante-gerada-por-ia_188544-28200.jpg?w=1060&t=st=1688577282~exp=1688577882~hmac=27450173bc049e315fd4b97bca6665f1f4821214bb5cb9826152c4367317ad76"
+                alt="" />
+              <div class="carousel-caption align-itens-end d-none d-md-block">
+                <a href="/cadastro" class="text-white text-decoration-none">
+                  <h1>Desenvolvendo o universo da diversão</h1>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img class="bd-placeholder-img bd-placeholder-img-lg d-block" height="500" width="900"
+                src="https://image.lexica.art/full_jpg/42642157-210a-456c-80a7-85245f18e6ce" alt="" />
+              <div class="carousel-caption align-itens-end d-none d-md-block">
+                <a href="/cursos" class="text-white text-decoration-none">
+                  <h1>Conheça nossos cursos</h1>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img class="bd-placeholder-img bd-placeholder-img-lg d-block" height="500" width="900"
+                src="https://image.lexica.art/full_jpg/e6264b24-c364-4a66-aa12-7f5feeba3e80" alt="" />
+              <div class="carousel-caption align-itens-end d-none d-md-block">
+                <a href="#sobreNos" class="text-white text-decoration-none">
+                  <h1>Saiba quem somos </h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="container p-5" id="time">
+    <div class="text-decoration-none p-5">
+      <h2 class="display-4 text-center py-5">Time</h2>
+      <p class="lead text-center">Conheça o time de desenvolvedores que fazem a DEVGAMES acontecer.</p>
+      <div class="row py-5">
+        <div class="col-6 text-center">
+          <img src="https://yt3.ggpht.com/a/AATXAJx8IE4qdlKV9UrO1hOGZCQq2B8QHv3RXLrp=s900-c-k-c0xffffffff-no-rj-mo"
+            class="rounded-circle" alt="..." width="200" height="200">
+          <h3>Todd Howard</h3>
+          <div>
+            <p class="lead"><strong> jogos são uma manifestação da nossa
+              criatividade, da nossa paixão e da nossa vontade. Eles são uma parte essencial da nossa cultura e da nossa
+              humanidade. Os jogos são mais do que entretenimento, são uma forma de celebrar a vida.</strong></p>
+          </div>
+        </div>
+        <div class="col-6 text-center">
+          <img src="https://th.bing.com/th/id/R.e8ae44989e53f26b4e4355dd03a84bbe?rik=qA%2bG2K2g6UxYtg&pid=ImgRaw&r=0"
+            class="rounded-circle" alt="..." width="200" height="200">
+          <h3>Hideo Kojima</h3>
+          <div>
+            <p class="lead">Os jogos são uma forma de arte, de expressão e de comunicação. Eles nos permitem criar
+              mundos, personagens, histórias e experiências que nos fazem sentir, pensar e sonhar. Eles nos desafiam,
+              nos divertem, nos ensinam e nos conectam com outras pessoas. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container p-5" id="oferecimento">
+    <h2 class="display-4 p-5 text-center">O que você vai aprender:</h2>
+    <p class="lead text-start py-5">Descubra um mundo de possibilidades como nosso aluno! Com cursos dinâmicos e
+      atualizados,
+      você mergulhará nas mais recentes tendências e conhecimentos da área. Você poderá escolher entre diversas opções
+      de cursos, desde programação até design, passando por marketing e negócios. Nossos instrutores especializados o
+      guiarão em uma jornada de aprendizado envolvente, preparando-o para desafios reais. Você terá acesso a materiais
+      didáticos de qualidade, feedback personalizado e suporte online. Seja parte de nossa comunidade educacional e
+      transforme suas paixões em habilidades práticas. Junte-se a nós para uma experiência educacional enriquecedora e
+      comece a trilhar o caminho para o sucesso hoje mesmo!</p>
+  </div>
+
+  <div class="container-fluid p-5" id="conteudo">
+    <div class="row p-5">
+      <div class="col-4 align-self-center">
+        <h2 class="display-4 text-center">Conteúdo</h2>
+        <p class="lead text-center">Conheça alguns dos conteúdos que a DEVGAMES oferece.</p>
+      </div>
+      <div class="col p-4">
+        <i class="bi bi-unity fs-3">Unity</i>
+        <p class="text-justify">Sem dúvida aqui está a engine mais popular de todas e principal concorrente da Unreal.
+          A Unity é conhecida por ser bem completa e amigável a desenvolvedores iniciantes, a engine é muito utilizada
+          por desenvolvedores independentes como também por grandes empresas como a Disney.
+        </p>
+      </div>
+      <div class="col p-4">
+        <i class="bi bi-5-circle fs-3">Unreal Engine</i>
+        <p class="text-justify">Sem dúvida, a Unreal é a engine que tem o maior poder gráfico atualmente, prova disso são
+          as grandes empresas de desenvolvimento de games utilizarem em seus projetos maiores. Temos como exemplo a
+          Microsoft, que usou a Unreal para desenvolver o Gears of War, uma das suas maiores franquias de sucesso.</p>
+      </div>
+      <div class="col p-4">
+        <i class="bi bi-joystick fs-3">Game Maker</i>
+        <p class="text-justify">É uma das engines mais antigas do mercado mas que não deixa de ser poderosa. É uma
+          ferramenta excelente para quem já tem uma certa experiência e quer desenvolver jogos de uma forma rápida
+          para várias plataformas, também foi utilizada para criar diversos jogos indies de sucesso como Hotline Miami e
+          Undertale.</p><a href="/cursos" class="text-decoration-none" style="color: white;">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid p-5" id="sobreNos">
+    <h2 class="display-4 text-center p-5" >Conheça a história da DEVGAMES.</h2>
+    <p class="lead text-start" >A DEVGAMES é uma empresa que tem como objetivo ensinar
+      programação de jogos para pessoas que querem entrar no mercado de trabalho de desenvolvimento de jogos. A empresa
+      oferece cursos online e presenciais, com professores qualificados e experientes, que abordam desde os conceitos
+      básicos até os mais avançados de criação de jogos</p>
+    <p class="lead text-start">A empresa foi fundada em 2021 por um grupo de amigos que queriam
+      ensinar programação de jogos para pessoas que queriam entrar no mercado de trabalho de desenvolvimento de jogos.
+      Esses amigos eram apaixonados por jogos e tinham experiência em diversas áreas, como design, arte, música, roteiro
+      e programação. Eles perceberam que havia uma demanda por profissionais qualificados nesse setor, que é um dos que
+      mais cresce no mundo. Por isso, eles decidiram criar a DEVGAMES, uma empresa que oferece cursos online e
+      presenciais de programação de jogos, com uma metodologia inovadora e eficaz, que combina teoria e prática</p>
+    <p class="lead text-start"> DEVGAMES tem como missão formar profissionais competentes e
+      criativos, que possam desenvolver jogos de qualidade e se destacar no mercado de trabalho. A empresa também tem
+      como visão ser reconhecida como uma referência em ensino de programação de jogos no Brasil e no mundo. A DEVGAMES
+      é mais do que uma empresa, é uma comunidade de apaixonados por jogos.</p>
+  </div>
+
+
+
+
+
+  <div class="beneficios p-5" id="beneficio">
+    <div>
+      <h2 class="display-4 text-center ">Benefícios</h2>
+      <p class="lead text-center ">Conheça os benefícios de ser um aluno da DEVGAMES.</p>
+    </div>
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-4 text-center">
+          <i class="bi bi-person-video3 my-3" style="font-size: 4rem;"></i>
+          <h5>Aulas ao vivo</h5>
+          <p>Aulas ao vivo com os professores para tirar dúvidas e aprender mais.</p>
+        </div>
+        <div class="col-4 text-center">
+          <i class="bi bi-laptop my-3" style="font-size: 4rem;"></i>
+          <h5>Aulas gravadas</h5>
+          <p>Aulas gravadas para você assistir quando quiser.</p>
+        </div>
+        <div class="col-4 text-center">
+          <i class="bi bi-file-text-fill my-3" style="font-size: 4rem;"></i>
+          <h5>Certificado</h5>
+          <p>Certificado de conclusão do curso.</p>
+        </div>
+        <div class="col-4 text-center">
+          <i class="bi bi-person-vcard-fill my-3" style="font-size: 4rem;"></i>
+          <h5>Curriculo diferenciado</h5>
+          <p>Destaque-se entre os melhores profisionais do país.</p>
+        </div>
+        <div class="col-4 text-center">
+          <i class="bi bi-cash-coin my-3" style="font-size: 4rem;"></i>
+          <h5>Financeiro</h5>
+          <p>Remuneração acima da média, com valores em real ou dolar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <div class=" container py-5 my-5" id="perguntas">
+      <h2 class="display-4 text-center mb-5 py-5">Perguntas frequentes</h2>
+      <div class="accordion accordion-flush py-5" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne">Existe algum pré-requisito para participar?</button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Ter acesso a internet e disposição para aprender.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo">Como se inscrever?</button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body"><strong>Basta clicar no Inscreva-se no inicio da pagina, fazer um cadastro e
+                escolher o curso que deseja.</strong></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">Qual a carga horaria do curso?</button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body"><strong>O curso pode ser assistido tanto online quanto na hora que voce
+                deseja.</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="container text-center p-5" id="contato">
+    <div class="row justify-content-md-center py-5">
+      <div class="row justify-content-around">
+        <div class="col-4">
+          <a href="https://br.linkedin.com/"><i class="bi bi-linkedin" style="font-size: 4rem;"></i></a>
+        </div>
+        <div class="col-4">
+          <a href="https://www.instagram.com/"><i class="bi bi-instagram" style="font-size: 4rem;"></i></a>
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <h2 class="display-4">Fale conosco</h2>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-4">
+          <a href="https://pt-br.facebook.com/"><i class="bi bi-facebook" style="font-size: 4rem;"></i></a>
+        </div>
+        <div class="col-4 py-4">
+          <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp" style="font-size: 4rem;"></i></a>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-4">
+          <a href="https://twitter.com/"><i class="bi bi-twitter" style="font-size: 4rem;"></i></a>
+        </div>
+        <div class="col-4">
+          <a href="https://github.com/"><i class="bi bi-github" style="font-size: 4rem;"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-bg-dark py-1 w-100" style="color: white;">
+    <p class="text-center py-3">Todos os direitos reservados <i class="bi bi-c-circle fs-5">2023</i></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

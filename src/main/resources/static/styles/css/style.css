@@ -1,3 +1,204 @@
 body {
-  background-image: linear-gradient(180deg, red, yellow);
+  background-image: linear-gradient(#0c0931,#1a1856,#e80074,#c200db,#00cfe5,#c200db,#e80074,#1a1856,#0c0931);
+  color: yellow;
+}
+
+.dropdown-menu {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+
+.navbar-nav .nav-link {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;  
+}
+
+.navbar-brand i{
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+.navbar-brand, i:hover{
+  transition: 0.3s;
+  color: black;
+  text-shadow: black 0px 0px 10px;
+}
+
+
+.navbar a{
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+.carousel-inner {
+  border: 2px solid yellow;
+}
+
+#time {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#time img{
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+  border: 2px solid yellow;
+}
+
+#time h2{
+  font-family: Vampiro One;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+.accordion .accordion-button, .accordion-body {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+  background-image: linear-gradient(to right, #0c0931,#1a1856,#e80074,#c200db,#00cfe5,#c200db,#e80074,#1a1856,#0c0931);
+}
+
+#perguntas h2{
+  font-family: Vampiro One;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#contato i{
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#DevGames {
+  font-family: Vampiro One;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#DevGames p{
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+.carousel-inner h1{
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#oferecimento {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+#beneficio, p,h5{
+  pointer-events: none;
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#beneficio i{
+  pointer-events: none;
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#beneficio, h2{
+  font-family: Vampiro One;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#conteudo, a{
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#perguntas {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;  
+}
+
+#contato{
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#contato i:hover{
+  transition: 0.3s;
+  color: black;
+  text-shadow: black 0px 0px 10px;
+}
+
+
+#sobreNos {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#inscreva {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#alunos {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#cartaoAluno #cards{
+  font-family: Wallpoet;
+  background-color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#card span{
+  padding: 5px;
+  font-family: Wallpoet;
+  color: royalblue;
+  text-shadow: black 0px 0px 10px;
+}
+
+#card h5{
+  font-family: Wallpoet;
+  color: royalblue;
+  text-shadow: black 0px 0px 10px;
+}
+
+.card-title {
+  font-family: Vampiro One;
+  font-size: 35px;
+  text-shadow: white 0px 0px 10px;
+}
+
+#cursos {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+}
+
+#modal-body p{
+	color:black;
 }

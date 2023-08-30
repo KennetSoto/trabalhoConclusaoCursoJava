@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns=schemaLocation="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Modelo</title>
+  <link th:href="@{styles/css/style.css}" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vampiro+One&family=Wallpoet&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container" id="nav-bar">
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="/">
+        <i class="bi bi-controller fs-2"></i> DEVGAMES</a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto gap-5">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/cadastro">Inscreva-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cursos">Cursos</a>
+          </li>
+          <li class="nav-item dropdown" data-bs-theme="dark">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Ajuda</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#perguntas">Duvidas</a></li>
+              <li><a class="dropdown-item" href="#contato">Fale Conosco</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid" id="cursos">
+    <div class="row">
+      <div class="col-4 align-self-center">
+        <h1 class="display-4">Unity</h1>
+        <p class="lead">A Unity é uma das engines mais utilizadas do mundo. Essa plataforma dá a possibilidade de criar
+          jogos 2D e 3D altamente otimizado e graficamente impressionante. Faz uso da linguagem C# e oferece essa
+          possibilidade de escrever linhas de código garantindo mais liberdade ao desenvolvedor durante o processo de
+          criação.</p>
+      </div>
+      <div class="col-6">
+        <video width="976" height="722" autoplay muted controls>
+          <source src="https://cdn.akamai.steamstatic.com/steam/apps/2037716/movie480.webm?t=1447370570"
+            type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="cursos">
+    <div class="row">
+      <div class="col-8">
+        <video width="976" height="722" autoplay muted controls>
+          <source src="https://cdn.akamai.steamstatic.com/steam/apps/256965216/movie480_vp9.webm?t=1692741612"
+            type="video/mp4">
+        </video>
+      </div>
+      <div class="col-4 align-self-center">
+        <h1 class="display-4 text-end">Unreal Engine 5</h1>
+        <p class="lead text-end">Unreal Engine também é uma ótima engine desenvolvida pela Epic Games. O Unreal é muito poderoso
+          e o seu foco é na realidade gráfica. A programação pode ser feita com C++ ou por meio do Blueprints, que é uma
+          programação visual de arrasta e solta mais avançada.</p>
+      </div>      
+    </div>
+  </div>
+
+  <div class="container-fluid" id="cursos">
+    <div class="row">
+      <div class="col-4 align-self-center">
+        <h1 class="display-4">Game Maker</h1>
+        <p class="lead">O Game Maker é, por muitos, considerada a melhor game engine para jogos 2D. É conhecida pela sua
+          facilidade de uso. É possível criar jogos sem programar, apenas arrastando e soltando componentes, mas também
+          tem a possibilidade de escrever as linhas de código usando Game Maker Language (GML). </p>
+      </div>
+      <div class="col-6">
+        <video width="976" height="722" autoplay muted controls>
+          <source src="https://cdn.akamai.steamstatic.com/steam/apps/256851898/movie480_vp9.webm?t=1631810568"
+            type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div> 
+
+
+  <div class="container-fluid" id="cursos">
+    <div class="row">
+      <div class="col-8">
+        <video width="976" height="722" autoplay muted controls>
+          <source src="https://cdn.akamai.steamstatic.com/steam/apps/256686725/movie480.webm?t=1592317466"
+            type="video/mp4">
+        </video>
+      </div>
+      <div class="col-4 align-self-center">
+        <h1 class="display-4 text-end">CryEngine</h1>
+        <p class="lead text-end">A CryEngine foi criada pela Crytek e é especializada em jogos FPS (First Person Shooter). Ela
+          possui um poderoso editor visual, diversas ferramentas integradas e de código aberto.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid" id="cursos">
+    <div class="row">
+      <div class="col-4 align-self-center">
+        <h1 class="display-4"> Godot</h1>
+        <p class="lead">A Godot Engine é completamente gratuita e open-source. Ela permite criar jogos 2D e 3D através
+          de uma arquitetura baseada em nós e um editor visual. Para escrever o código pode ser usadas as linguagens
+          GDScript (baseada em Python), C++, C#, e outras com suporte adicionado pela comunidade.</p>
+      </div>
+      <div class="col-6">
+        <video width="976" height="722" autoplay muted controls>
+          <source src="https://cdn.akamai.steamstatic.com/steam/apps/256925572/movie480_vp9.webm?t=1675708562"
+            type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid" id="cursos">
+    <div class="row">
+      <div class="col-8">
+        <video width="976" height="722" autoplay muted controls>
+          <source src="https://cdn.akamai.steamstatic.com/steam/apps/256672841/movie480.webm?t=1476909226"
+            type="video/mp4">
+        </video>
+      </div>
+      <div class="col-4 align-self-center ">
+        <h1 class="display-4 text-end">Creation Engine 2</h1>
+        <p class="lead text-end">O Creation Engine é um motor de jogos eletrônicos 3D criado pela Bethesda Game Studios, baseado
+          no motor Gamebryo. O Creation Engine foi usado para criar videogames RPG, como The Elder Scrolls V: Skyrim,
+          Fallout 4 e Fallout 76. Sua nova versão, Creation Engine 2, vai fazer estreia em 2023 com o jogo Starfield.</p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class=" container py-5 my-5" id="perguntas">
+    <h2 class="display-4 text-center mb-5 py-5">Perguntas frequentes</h2>
+    <div class="accordion accordion-flush py-5" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseOne">Existe algum pré-requisito para participar?</button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <strong>Ter acesso a internet e disposição para aprender.</strong>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo">Como se inscrever?</button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body"><strong>Basta clicar no Inscreva-se no inicio da pagina, fazer um cadastro e
+              escolher o curso que deseja.</strong></div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree">Qual a carga horaria do curso?</button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body"><strong>O curso pode ser assistido tanto online quanto na hora que voce
+              deseja.</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container text-center p-5" id="contato">
+  <div class="row justify-content-md-center py-5">
+    <div class="row justify-content-around">
+      <div class="col-4">
+        <a href="https://br.linkedin.com/"><i class="bi bi-linkedin" style="font-size: 4rem;"></i></a>
+      </div>
+      <div class="col-4">
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram" style="font-size: 4rem;"></i></a>
+      </div>
+    </div>
+    <div class="col-md-auto">
+      <h2 class="display-4">Fale conosco</h2>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-4">
+        <a href="https://pt-br.facebook.com/"><i class="bi bi-facebook" style="font-size: 4rem;"></i></a>
+      </div>
+      <div class="col-4 py-4">
+        <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp" style="font-size: 4rem;"></i></a>
+      </div>
+    </div>
+    <div class="row justify-content-evenly">
+      <div class="col-4">
+        <a href="https://twitter.com/"><i class="bi bi-twitter" style="font-size: 4rem;"></i></a>
+      </div>
+      <div class="col-4">
+        <a href="https://github.com/"><i class="bi bi-github" style="font-size: 4rem;"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="text-bg-dark py-1 w-100" style="color: white;">
+  <p class="text-center py-3">Todos os direitos reservados <i class="bi bi-c-circle fs-5">2023</i></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
