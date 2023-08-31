@@ -202,3 +202,10 @@ ul li ul {
 #modal-body p{
 	color:black;
 }
+
+#editar {
+  font-family: Wallpoet;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+	
+}
